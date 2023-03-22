@@ -14,7 +14,8 @@ import java.util.Scanner;
  * @author Tran Viet Duc
  */
 public class DanhSach {
-    private final ArrayList<Nguoi> a= new ArrayList<>();
+    private final ArrayList<Nguoi> a= new ArrayList<>(); 
+    // read files
     public void docFile(String tenFile){
         try {
             File f = new File(tenFile);
@@ -50,6 +51,7 @@ public class DanhSach {
     public void setA(ArrayList<Nguoi> a){
         a=this.a;
     }
+// export 
     public void xuat(String noiDung){
         System.out.println(noiDung);
         for(Nguoi x:a)
@@ -154,6 +156,7 @@ public class DanhSach {
         public double tongDoanhThu() {
         return tongTienGV()+tongTienNV();
     }
+    //output
     public void output(){
         xuat(" ");
         System.out.println("- Them mot giang vien hoac nhan vien: ");
